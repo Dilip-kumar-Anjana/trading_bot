@@ -1,0 +1,5 @@
+
+2026-02-04 21:40:43,991 | INFO | trading_bot | [DRY-RUN] API Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-04 21:40:43,993 | INFO | trading_bot | [DRY-RUN] API Response: {'orderId': 4147744, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'executedQty': 0.001, 'avgPrice': 47829.15}
+2026-02-04 21:40:44,732 | INFO | trading_bot | [DRY-RUN] API Request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 50000.0, 'timeInForce': 'GTC'}
+2026-02-04 21:40:44,733 | INFO | trading_bot | [DRY-RUN] API Response: {'orderId': 7351140, 'symbol': 'BTCUSDT', 'status': 'NEW', 'executedQty': 0.001, 'avgPrice': 50000.0}
