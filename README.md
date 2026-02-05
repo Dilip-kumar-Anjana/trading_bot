@@ -53,11 +53,38 @@ Windows (PowerShell):
 setx BINANCE_API_KEY "your_api_key"
 setx BINANCE_API_SECRET "your_api_secret"
 ```
-```
-macOS / Linux:
 
+macOS / Linux:
+```
 export BINANCE_API_KEY="your_api_key"
 export BINANCE_API_SECRET="your_api_secret"
 ```
 Dry-run mode does not require API keys.
+
+CLI Usage
+
+Run the bot using python cli.py with the following arguments:
+```SQL
+--symbol SYMBOL             : Trading pair, e.g., BTCUSDT
+--side {BUY,SELL}           : Order side
+--order-type {MARKET,LIMIT} : Order type
+--quantity QUANTITY         : Order quantity
+--price PRICE               : Required for LIMIT orders
+--dry-run                   : Optional, simulate order without real API
+```
+
+MARKET Order Example
+```bash
+python cli.py --symbol BTCUSDT --side BUY --order-type MARKET --quantity 0.001
+```
+LIMIT Order Example
+```bash
+python cli.py --symbol BTCUSDT --side SELL --order-type LIMIT --quantity 0.001 --price 50000
+```
+🧪 Dry-Run Testing (Safe Simulation)
+
+Dry-run mode simulates order execution without hitting Binance Testnet or using real funds.
+
+MARKET Order Dry-Run Example
+
 
