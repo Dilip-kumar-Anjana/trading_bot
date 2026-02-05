@@ -34,3 +34,30 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
+macOS / Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3.Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4.(Optional for real Testnet use) Set Binance API keys as environment variables:
+
+Windows (PowerShell):
+```
+setx BINANCE_API_KEY "your_api_key"
+setx BINANCE_API_SECRET "your_api_secret"
+```
+```
+macOS / Linux:
+
+export BINANCE_API_KEY="your_api_key"
+export BINANCE_API_SECRET="your_api_secret"
+```
+Dry-run mode does not require API keys.
+
