@@ -24,3 +24,13 @@ Supports MARKET and LIMIT orders, BUY and SELL, with structured logging, input v
 ```bash
 git clone <repo-url>
 cd trading_bot
+```
+
+2. Create and activate a Python virtual environment:
+
+Windows:
+```cmd
+python -m venv venv
+venv\Scripts\activate
+```
+
