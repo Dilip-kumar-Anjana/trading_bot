@@ -61,6 +61,8 @@ export BINANCE_API_SECRET="your_api_secret"
 ```
 Dry-run mode does not require API keys.
 
+---
+
 CLI Usage
 
 Run the bot using python cli.py with the following arguments:
